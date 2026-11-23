@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Hub | Play Free Games</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">🎮 GAMING<span>HUB</span></div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#games">Games</a>
+        <a href="#categories">Categories</a>
+    </nav>
+
+    <button id="musicButton" class="music-btn">
+        ♪ Music: On
+    </button>
+</header>
+
+<section class="hero" id="home">
+    <div class="hero-content">
+        <p class="welcome">WELCOME TO YOUR GAMING WORLD</p>
+        <h1>PLAY MORE.<br><span>HAVE FUN.</span></h1>
+        <p>
+            Discover exciting games, challenge yourself
+            and enjoy unlimited entertainment.
+        </p>
+        <a href="#games" class="play-button">EXPLORE GAMES →</a>
+    </div>
+    <div class="hero-art">🎮</div>
+</section>
+
+<section class="categories" id="categories">
+    <h2>Explore Categories</h2>
+    <div class="category-list">
+        <button data-category="All">🌟 All Games</button>
+        <button data-category="Action">⚔️ Action</button>
+        <button data-category="Sports">🏀 Sports</button>
+        <button data-category="Puzzle">🧩 Puzzle</button>
+        <button data-category="Arcade">🕹️ Arcade</button>
+    </div>
+</section>
+
+<main class="games-section" id="games">
+    <div class="section-heading">
+        <div>
+            <p class="small-heading">YOUR NEXT ADVENTURE</p>
+            <h2>Popular Games</h2>
+        </div>
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="🔍 Search games..."
+        >
+    </div>
+
+    <div class="game-grid" id="gameGrid">
+
+        <article class="game-card" data-category="Action">
+            <div class="game-image action-image">🏎️</div>
+            <div class="game-info">
+                <h3>Speed Racer</h3>
+                <p>Action • Racing</p>
+                <button class="game-button" data-game="racing">PLAY NOW</button>
+            </div>
+        </article>
+
+        <article class="game-card" data-category="Sports">
+            <div class="game-image basketball-image">🏀</div>
+            <div class="game-info">
+                <h3>Basketball Challenge</h3>
+                <p>Sports • Basketball</p>
+                <button class="game-button" data-game="basketball">PLAY NOW</button>
+            </div>
+        </article>
+
+        <article class="game-card" data-category="Puzzle">
+            <div class="game-image puzzle-image">🧩</div>
+            <div class="game-info">
+                <h3>Memory Master</h3>
+                <p>Puzzle • Brain Game</p>
+                <button class="game-button" data-game="memory">PLAY NOW</button>
+            </div>
+        </article>
+
+        <article class="game-card" data-category="Arcade">
+            <div class="game-image arcade-image">👾</div>
+            <div class="game-info">
+                <h3>Alien Clicker</h3>
+                <p>Arcade • Fun</p>
+                <button class="game-button" data-game="clicker">PLAY NOW</button>
+            </div>
+        </article>
+
+        <article class="game-card" data-category="Action">
+            <div class="game-image space-image">🚀</div>
+            <div class="game-info">
+                <h3>Space Adventure</h3>
+                <p>Action • Adventure</p>
+                <button class="game-button" data-game="space">PLAY NOW</button>
+            </div>
+        </article>
+
+        <article class="game-card" data-category="Puzzle">
+            <div class="game-image number-image">🔢</div>
+            <div class="game-info">
+                <h3>Number Mystery</h3>
+                <p>Puzzle • Thinking</p>
+                <button class="game-button" data-game="number">PLAY NOW</button>
+            </div>
+        </article>
+
+    </div>
+
+    <p id="noGames" hidden>No games found. Try another search!</p>
+</main>
+
+<section class="bottom-banner">
+    <h2>READY FOR YOUR NEXT CHALLENGE?</h2>
+    <p>Your adventure starts here.</p>
+    <a href="#games" class="play-button">PLAY GAMES</a>
+</section>
+
+<footer>
+    <h2>🎮 GAMING HUB</h2>
+    <p>Made for gamers. Built for fun.</p>
+    <p>© 2026 Gaming Hub. All rights reserved.</p>
+</footer>
+
+<!-- Game window -->
+<div class="modal" id="gameModal">
+    <div class="game-window">
+        <button class="close-button" id="closeGame">✕</button>
+        <h2 id="gameTitle">Game</h2>
+        <div id="gameArea"></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
