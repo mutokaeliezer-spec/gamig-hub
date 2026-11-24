@@ -1,149 +1,63 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gaming Hub | Play Free Games</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Gaming Hub — play free original browser games, explore gaming guides and discover new challenges.">
+  <title>Gaming Hub | Play · Explore · Enjoy</title><link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<header class="navbar">
-    <div class="logo">🎮 GAMING<span>HUB</span></div>
-
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#games">Games</a>
-        <a href="#categories">Categories</a>
-    </nav>
-
-    <button id="musicButton" class="music-btn">
-        ♪ Music: On
-    </button>
+<header class="site-header">
+  <a class="brand" href="index.html"><span class="brand-mark">🎮</span><span>Gaming <b>Hub</b><small>Play · Explore · Enjoy</small></span></a>
+  <nav class="main-nav" aria-label="Main navigation"><a class="active" href="index.html">⌂ &nbsp;Home</a><a href="#games">🎮 &nbsp;Games⌄</a><a href="about.html">♟ &nbsp;About Us</a><a href="contact.html">✉ &nbsp;Contact</a><a href="privacy.html">◈ &nbsp;Privacy Policy</a></nav>
+  <label class="header-search"><span>⌕</span><input id="searchInput" type="search" placeholder="Search games..." aria-label="Search games"></label>
+  <button id="musicButton" class="music-button" type="button" aria-label="Toggle background music" aria-pressed="false">♫</button>
 </header>
+<main>
+  <section class="hero" id="home"><div class="hero-copy"><p class="eyebrow">WELCOME TO</p><h1>Gaming <span>Hub!</span></h1><h2>Your ultimate gaming destination!</h2><p>Play exciting games, discover new worlds, and enjoy non-stop fun — all in one place!</p><a class="primary-button" href="#games">▶ &nbsp;Start Playing</a></div><div class="hero-art" aria-label="Original neon gaming artwork"><div class="hero-glow"></div><div class="hero-orbit orbit-a"></div><div class="hero-orbit orbit-b"></div><div class="hero-controller">🎮</div><div class="hero-spark spark-a">✦</div><div class="hero-spark spark-b">✧</div><div class="hero-tag">LEVEL UP<br><b>YOUR GAME</b></div></div></section>
 
-<section class="hero" id="home">
-    <div class="hero-content">
-        <p class="welcome">WELCOME TO YOUR GAMING WORLD</p>
-        <h1>PLAY MORE.<br><span>HAVE FUN.</span></h1>
-        <p>
-            Discover exciting games, challenge yourself
-            and enjoy unlimited entertainment.
-        </p>
-        <a href="#games" class="play-button">EXPLORE GAMES →</a>
+  <section class="featured-section" id="games"><div class="section-heading"><h2><span class="bar"></span>⭐ &nbsp;Featured Games</h2><a href="#all-games">View All Games&nbsp; →</a></div>
+    <div class="featured-grid">
+      <article class="feature-card" data-category="Action" data-name="Speed Racer"><img src="assets/speed-racer.jpg" alt="Original neon racing game artwork"><div class="feature-overlay"><h3>Speed Racer</h3><button class="play-game" data-game="racing">▶ Play Now</button></div></article>
+      <article class="feature-card" data-category="Sports" data-name="Basketball Challenge"><img src="assets/basketball-challenge.jpg" alt="Original basketball game artwork"><div class="feature-overlay"><h3>Basketball Challenge</h3><button class="play-game" data-game="basketball">▶ Play Now</button></div></article>
+      <article class="feature-card" data-category="Puzzle" data-name="Gem Match"><img src="assets/gem-match.jpg" alt="Colourful gem puzzle game artwork"><div class="feature-overlay"><h3>Gem Match</h3><button class="play-game" data-game="memory">▶ Play Now</button></div></article>
+      <article class="feature-card" data-category="Action" data-name="Space Dodge"><img src="assets/space-dodge.jpg" alt="Original space arcade game artwork"><div class="feature-overlay"><h3>Space Dodge</h3><button class="play-game" data-game="space">▶ Play Now</button></div></article>
+      <article class="feature-card" data-category="Arcade" data-name="Alien Clicker"><img src="assets/alien-arcade.jpg" alt="Friendly alien arcade game artwork"><div class="feature-overlay"><h3>Alien Clicker</h3><button class="play-game" data-game="clicker">▶ Play Now</button></div></article>
+      <article class="feature-card" data-category="Puzzle" data-name="Number Mystery"><img src="assets/number-mystery.jpg" alt="Number puzzle game artwork"><div class="feature-overlay"><h3>Number Mystery</h3><button class="play-game" data-game="number">▶ Play Now</button></div></article>
     </div>
-    <div class="hero-art">🎮</div>
-</section>
+  </section>
 
-<section class="categories" id="categories">
-    <h2>Explore Categories</h2>
-    <div class="category-list">
-        <button data-category="All">🌟 All Games</button>
-        <button data-category="Action">⚔️ Action</button>
-        <button data-category="Sports">🏀 Sports</button>
-        <button data-category="Puzzle">🧩 Puzzle</button>
-        <button data-category="Arcade">🕹️ Arcade</button>
-    </div>
-</section>
+  <section class="dashboard">
+    <aside class="panel category-panel"><h2>🎮 &nbsp;Game Categories</h2><div class="category-list"><button class="filter" data-category="Action">✥ &nbsp;Action Games <span>›</span></button><button class="filter" data-category="Sports">🏀 &nbsp;Sport Games <span>›</span></button><button class="filter" data-category="Puzzle">◆ &nbsp;Puzzle Games <span>›</span></button><button class="filter" data-category="Arcade">▦ &nbsp;Arcade Games <span>›</span></button><button class="filter" data-category="Skill">✦ &nbsp;Skill Games <span>›</span></button><button class="filter active" data-category="All">••• &nbsp;All Games <span>›</span></button></div></aside>
+    <section class="panel popular-panel"><h2>🔥 &nbsp;Popular Games</h2><div class="popular-grid">
+      <article class="popular-card"><img src="assets/snake.svg" alt="Snake Trail artwork"><h3>Snake Trail</h3><button class="play-game" data-game="snake">▶ Play Now</button></article>
+      <article class="popular-card"><img src="assets/alien-arcade.jpg" alt="Alien Clicker artwork"><h3>Alien Clicker</h3><button class="play-game" data-game="clicker">▶ Play Now</button></article>
+      <article class="popular-card"><img src="assets/gem-match.jpg" alt="Gem Match artwork"><h3>Gem Match</h3><button class="play-game" data-game="memory">▶ Play Now</button></article>
+    </div></section>
+    <section class="panel about-panel"><h2>ⓘ &nbsp;About Gaming Hub</h2><p>Gaming Hub is a free browser gaming project made for players who love quick challenges. Play original mini-games, sharpen your skills, explore helpful gaming guides and discover something new.</p><a class="primary-button" href="about.html">Learn More&nbsp; →</a><span class="about-pad">🎮</span></section>
+    <section class="panel news-panel"><h2>▤ &nbsp;Latest News</h2><article class="news-item"><img src="assets/basketball-challenge.jpg" alt="Basketball game"><div><b>Basketball Challenge is live!</b><small>Try the timing challenge and build your best streak.</small></div></article><article class="news-item"><img src="assets/space-dodge.jpg" alt="Space game"><div><b>Explore the arcade</b><small>New browser challenges are waiting to be played.</small></div></article></section>
+  </section>
 
-<main class="games-section" id="games">
-    <div class="section-heading">
-        <div>
-            <p class="small-heading">YOUR NEXT ADVENTURE</p>
-            <h2>Popular Games</h2>
-        </div>
-
-        <input
-            type="text"
-            id="searchInput"
-            placeholder="🔍 Search games..."
-        >
-    </div>
-
+  <section class="library-section" id="all-games"><div class="section-heading"><h2><span class="bar"></span>All Games</h2><p>Free games. No downloads. Just press play.</p></div>
+    <div class="filters" id="categoryFilters"><button class="filter active" data-category="All">All</button><button class="filter" data-category="Action">Action</button><button class="filter" data-category="Sports">Sports</button><button class="filter" data-category="Puzzle">Puzzle</button><button class="filter" data-category="Arcade">Arcade</button><button class="filter" data-category="Skill">Skill</button></div>
     <div class="game-grid" id="gameGrid">
-
-        <article class="game-card" data-category="Action">
-            <div class="game-image action-image">🏎️</div>
-            <div class="game-info">
-                <h3>Speed Racer</h3>
-                <p>Action • Racing</p>
-                <button class="game-button" data-game="racing">PLAY NOW</button>
-            </div>
-        </article>
-
-        <article class="game-card" data-category="Sports">
-            <div class="game-image basketball-image">🏀</div>
-            <div class="game-info">
-                <h3>Basketball Challenge</h3>
-                <p>Sports • Basketball</p>
-                <button class="game-button" data-game="basketball">PLAY NOW</button>
-            </div>
-        </article>
-
-        <article class="game-card" data-category="Puzzle">
-            <div class="game-image puzzle-image">🧩</div>
-            <div class="game-info">
-                <h3>Memory Master</h3>
-                <p>Puzzle • Brain Game</p>
-                <button class="game-button" data-game="memory">PLAY NOW</button>
-            </div>
-        </article>
-
-        <article class="game-card" data-category="Arcade">
-            <div class="game-image arcade-image">👾</div>
-            <div class="game-info">
-                <h3>Alien Clicker</h3>
-                <p>Arcade • Fun</p>
-                <button class="game-button" data-game="clicker">PLAY NOW</button>
-            </div>
-        </article>
-
-        <article class="game-card" data-category="Action">
-            <div class="game-image space-image">🚀</div>
-            <div class="game-info">
-                <h3>Space Adventure</h3>
-                <p>Action • Adventure</p>
-                <button class="game-button" data-game="space">PLAY NOW</button>
-            </div>
-        </article>
-
-        <article class="game-card" data-category="Puzzle">
-            <div class="game-image number-image">🔢</div>
-            <div class="game-info">
-                <h3>Number Mystery</h3>
-                <p>Puzzle • Thinking</p>
-                <button class="game-button" data-game="number">PLAY NOW</button>
-            </div>
-        </article>
-
-    </div>
-
-    <p id="noGames" hidden>No games found. Try another search!</p>
+      <article class="game-card" data-category="Action" data-name="Speed Racer"><img src="assets/speed-racer.jpg" alt="Speed Racer artwork"><div class="game-card-body"><span>Action · Racing</span><h3>Speed Racer</h3><p>Dodge road blocks and see how far you can drive.</p><button class="play-game" data-game="racing">Play Game →</button></div></article>
+      <article class="game-card" data-category="Sports" data-name="Basketball Challenge"><img src="assets/basketball-challenge.jpg" alt="Basketball Challenge artwork"><div class="game-card-body"><span>Sports · Timing</span><h3>Basketball Challenge</h3><p>Time your shot and try to build a scoring streak.</p><button class="play-game" data-game="basketball">Play Game →</button></div></article>
+      <article class="game-card" data-category="Puzzle" data-name="Gem Match"><img src="assets/gem-match.jpg" alt="Gem Match artwork"><div class="game-card-body"><span>Puzzle · Memory</span><h3>Gem Match</h3><p>Find matching pairs in this colourful memory game.</p><button class="play-game" data-game="memory">Play Game →</button></div></article>
+      <article class="game-card" data-category="Arcade" data-name="Alien Clicker"><img src="assets/alien-arcade.jpg" alt="Alien Clicker artwork"><div class="game-card-body"><span>Arcade · Quick Play</span><h3>Alien Clicker</h3><p>Tap the friendly alien as many times as you can.</p><button class="play-game" data-game="clicker">Play Game →</button></div></article>
+      <article class="game-card" data-category="Action" data-name="Space Dodge"><img src="assets/space-dodge.jpg" alt="Space Dodge artwork"><div class="game-card-body"><span>Action · Arcade</span><h3>Space Dodge</h3><p>Steer through space and avoid drifting asteroids.</p><button class="play-game" data-game="space">Play Game →</button></div></article>
+      <article class="game-card" data-category="Puzzle" data-name="Number Mystery"><img src="assets/number-mystery.jpg" alt="Number Mystery artwork"><div class="game-card-body"><span>Puzzle · Brain Teaser</span><h3>Number Mystery</h3><p>Use the clues to guess the secret number.</p><button class="play-game" data-game="number">Play Game →</button></div></article>
+      <article class="game-card" data-category="Arcade" data-name="Snake Trail"><img src="assets/snake.svg" alt="Snake Trail game artwork"><div class="game-card-body"><span>Arcade · Classic</span><h3>Snake Trail</h3><p>Collect dots, grow longer and avoid the walls.</p><button class="play-game" data-game="snake">Play Game →</button></div></article>
+      <article class="game-card" data-category="Puzzle" data-name="Tic-Tac-Toe"><img src="assets/tic-tac-toe.svg" alt="Tic Tac Toe artwork"><div class="game-card-body"><span>Puzzle · Two Players</span><h3>Tic-Tac-Toe</h3><p>Challenge a friend on the same device.</p><button class="play-game" data-game="tictactoe">Play Game →</button></div></article>
+      <article class="game-card" data-category="Skill" data-name="Reaction Test"><img src="assets/reaction-test.svg" alt="Reaction Test artwork"><div class="game-card-body"><span>Skill · Reflexes</span><h3>Reaction Test</h3><p>Wait for the signal and test your reaction time.</p><button class="play-game" data-game="reaction">Play Game →</button></div></article>
+      <article class="game-card" data-category="Skill" data-name="Color Match"><img src="assets/color-match.svg" alt="Color Match artwork"><div class="game-card-body"><span>Skill · Focus</span><h3>Color Match</h3><p>Remember the colour and choose the matching tile.</p><button class="play-game" data-game="color">Play Game →</button></div></article>
+      <article class="game-card" data-category="Puzzle" data-name="Word Scramble"><img src="assets/word-scramble.svg" alt="Word Scramble artwork"><div class="game-card-body"><span>Puzzle · Words</span><h3>Word Scramble</h3><p>Rearrange mixed-up letters to reveal the word.</p><button class="play-game" data-game="word">Play Game →</button></div></article>
+      <article class="game-card" data-category="Arcade" data-name="Pixel Pong"><img src="assets/pixel-pong.svg" alt="Pixel Pong artwork"><div class="game-card-body"><span>Arcade · Classic</span><h3>Pixel Pong</h3><p>Keep the ball in play and beat your high score.</p><button class="play-game" data-game="pong">Play Game →</button></div></article>
+      <article class="game-card" data-category="Skill" data-name="Star Catch"><img src="assets/star-catch.svg" alt="Star Catch artwork"><div class="game-card-body"><span>Skill · Reflexes</span><h3>Star Catch</h3><p>Catch falling stars before the timer runs out.</p><button class="play-game" data-game="stars">Play Game →</button></div></article>
+    </div><p id="noGames" class="empty-state" hidden>No games match your search. Try another word or category.</p>
+  </section>
+  <section class="tips-section"><div><p class="eyebrow">LEVEL UP YOUR PLAY</p><h2>More than just games</h2><p>Try a new challenge, learn how each game works and keep practising to beat your own best score. Gaming Hub is designed for quick fun on desktop, tablet and mobile.</p></div><div class="tip-cards"><article><b>🎯 Play your way</b><p>Choose action, sports, puzzle, arcade or skill games.</p></article><article><b>🧠 Learn as you play</b><p>Build focus, timing, memory and problem-solving skills.</p></article><article><b>🚀 No installation</b><p>Open a game in your browser and start playing.</p></article></div></section>
 </main>
-
-<section class="bottom-banner">
-    <h2>READY FOR YOUR NEXT CHALLENGE?</h2>
-    <p>Your adventure starts here.</p>
-    <a href="#games" class="play-button">PLAY GAMES</a>
-</section>
-
-<footer>
-    <h2>🎮 GAMING HUB</h2>
-    <p>Made for gamers. Built for fun.</p>
-    <p>© 2026 Gaming Hub. All rights reserved.</p>
-</footer>
-
-<!-- Game window -->
-<div class="modal" id="gameModal">
-    <div class="game-window">
-        <button class="close-button" id="closeGame">✕</button>
-        <h2 id="gameTitle">Game</h2>
-        <div id="gameArea"></div>
-    </div>
-</div>
-
+<footer class="site-footer"><a class="brand" href="index.html"><span class="brand-mark">🎮</span><span>Gaming <b>Hub</b><small>Play · Explore · Enjoy</small></span></a><nav><a href="index.html">Home</a><a href="#games">Games</a><a href="about.html">About Us</a><a href="contact.html">Contact</a><a href="privacy.html">Privacy Policy</a></nav><p>© 2026 Gaming Hub. All rights reserved.</p></footer>
+<div class="modal" id="gameModal" role="dialog" aria-modal="true" aria-labelledby="gameTitle"><div class="game-window"><button class="close-button" id="closeGame" aria-label="Close game">×</button><p class="eyebrow">GAMING HUB ARCADE</p><h2 id="gameTitle">Game</h2><div id="gameArea"></div></div></div>
 <script src="script.js"></script>
-</body>
-</html>
-
+</body></html>
